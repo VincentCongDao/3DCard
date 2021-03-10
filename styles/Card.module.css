@@ -1,0 +1,156 @@
+.CardWrapper {
+    width: 100%;
+    perspective: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardContainer {
+    width: 285px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(251 239 154 / 31%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: grab;
+    position: relative;
+    overflow: hidden;
+}
+
+.CircleWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    border-top-right-radius: 25px;
+}
+
+.Circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -4.2em;
+    right: -10em;
+    z-index: -1;
+    background-color: rgba(88, 185, 85, 0.692);
+    border-radius: 50%;
+}
+
+.TopContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+    position: relative;
+    align-items: center;
+    /* justify-content: flex-end; */
+    padding: 1em 15px;
+}
+
+.BottomContainer {
+    display: flex;
+    flex: 1;
+    padding: 0 1em;
+}
+
+.DetailText {
+    color: rgba(0, 0, 0, 0.829);
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 15;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.ImageWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ImageDiv {
+    width: auto;
+    height: 190px;
+    z-index: 99;
+    user-select: none;
+    margin: 0 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.image {
+    width: 250px;
+    height: 70%;
+    user-select: none;
+    border-radius: 25px;
+}
+
+
+/* Card Information */
+.CardInfoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 6px 0 6px;
+    line-height: 1.75;
+    justify-content: center;
+    align-items: center;
+}
+
+.MediumText {
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(114, 114, 114, 0.363);
+}
+
+.SmallText {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.198)
+}
+
+.Space {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Buy Link */
+
+.BuyLink {
+    padding: 7px;
+    background-color: rgba(60, 255, 0, 0.897);
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 290ms ease-in-out;
+    border-radius: 10%;
+    margin-top: 5px
+}
+
+.BuyLink:hover {
+    background-color: transparent;
+    border: 2px solid rgb(123, 245, 24);
+    color: rgba(0, 0, 0, 0.7);
+}
